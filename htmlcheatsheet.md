@@ -8,7 +8,8 @@
 
 ## Meta and other unseen markup
 
-```<!DOCTYPE html>``` Declares the doctype so the browser knows whether to expect HTML4 or HTML5
+```<!DOCTYPE>``` Declares the doctype so the browser knows whether to expect HTML4 _(<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">)_ or HTML5 _(<!DOCTYPE html>)_
 
 ```<meta />``` Metadata tag, typically used to telling the browser how to behave at different sizes and for search engines/social networks to pull headline, photo and description when shared
 
