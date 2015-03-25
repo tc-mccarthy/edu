@@ -1,51 +1,61 @@
 ## Basic Tags
-<html></html> Creates an HTML document
+<pre>
+	<html></html> Creates an HTML document
 
-<head></head> Sets off the title and other information that isn’t displayed on the web page itself
+	<head></head> Sets off the title and other information that isn’t displayed on the web page itself
 
-<body></body> Sets off the visible portion of the document
+	<body></body> Sets off the visible portion of the document
+</pre>
 
 ## Text Tags
-<pre></pre> Creates preformatted text
+<pre>
+	<pre></pre> Creates preformatted text
 
-<h1></h1> Creates the largest headline
+	<h1></h1> Creates the largest headline
 
-<h6></h6> Creates the smallest headline
+	<h6></h6> Creates the smallest headline
 
-<strong></strong> Creates bold text
+	<strong></strong> Creates bold text
 
-<em></em> Creates italic text (em for emphasize)
+	<em></em> Creates italic text (em for emphasize)
+</pre>
 
 ## Links
-<a href="URL"></a> Creates a hyperlink
+<pre>
+	<a href="URL"></a> Creates a hyperlink
 
-<a href="mailto:EMAIL"></a> Creates a mailto link
+	<a href="mailto:EMAIL"></a> Creates a mailto link
 
-<a href="#NAME"></a> Creates an anchor tag -- a link to a location within this document
-
+	<a href="#NAME"></a> Creates an anchor tag -- a link to a location within this document
+</pre>
 Formatting
-<p></p> Creates a new paragraph
 
-<br /> Inserts a line break
+<pre>
+	<p></p> Creates a new paragraph
 
-<ol></ol> Creates a numbered list (ol stands for ordered list)
+	<br /> Inserts a line break
 
-<ul></ul> Creates a bulleted list (ul stands for unordered list)
+	<ol></ol> Creates a numbered list (ol stands for ordered list)
 
-<li></li> Precedes each list item, and adds a number or symbol depending upon the type of list selected
+	<ul></ul> Creates a bulleted list (ul stands for unordered list)
 
-<div> A generic tag used to format large blocks of HTML, also used for stylesheets </div>
+	<li></li> Precedes each list item, and adds a number or symbol depending upon the type of list selected
 
-<img src="url" /> Adds an image
+	<div> A generic tag used to format large blocks of HTML, also used for stylesheets </div>
 
-<hr /> Inserts a horizontal rule
+	<img src="url" /> Adds an image
 
-Tables -- CAN NOT BE MADE TRULY RESPONSIVE
+	<hr /> Inserts a horizontal rule
+</pre>
 
-<table></table> Creates a table
+## Tables -- CAN NOT BE MADE TRULY RESPONSIVE
 
-<tr></tr> Creates a row
+<pre>
+	<table></table> Creates a table
 
-<td></td> Creates a cell
+	<tr></tr> Creates a row
 
-<th></th> Creates a header cell (top of the column)
+	<td></td> Creates a cell
+
+	<th></th> Creates a header cell (top of the column)
+</pre>
