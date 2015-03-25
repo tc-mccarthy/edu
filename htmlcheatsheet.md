@@ -10,7 +10,7 @@
 
 ```<!DOCTYPE html>``` Declares the doctype so the browser knows whether to expect HTML4 or HTML5
 
-```<meta />``` Metadata tag, typically used to telling the browser how to behave at different sizes and for google/social networks to pull headline, photo and description when shared
+```<meta />``` Metadata tag, typically used to telling the browser how to behave at different sizes and for search engines/social networks to pull headline, photo and description when shared
 
 ```<link />``` Link tags are used to attach external documents to your HTML. Most commonly used to attach CSS stylesheets and RSS feeds
 
