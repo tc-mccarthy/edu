@@ -6,6 +6,17 @@
 
 ```<body></body>``` Sets off the visible portion of the document
 
+## Meta Tags
+
+```<!DOCTYPE html>``` Declares the doctype so the browser knows whether or not to expect HTML4 or HTML5
+
+```<meta />``` Metadata tag, typically used to telling the browser how to behave at different sizes and for google/social networks to pull headline, photo and description when shared
+
+```<link />``` Link tags are used to attach external documents to your HTML. Most commonly used to attach CSS stylesheets and RSS feeds
+
+```<script></script>``` Script tags are used to attach Javascript files to your HTML, or author JS right on the page.
+
+```<!-- COMMENT TEXT -->``` Inserting comments in your HTML can be useful for leaving yourself notes in case you need to revisit your code later
 
 ## Text Tags
 
