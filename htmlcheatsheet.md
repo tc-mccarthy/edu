@@ -6,7 +6,7 @@
 
 ```<body></body>``` Sets off the visible portion of the document
 
-## Meta Tags
+## Meta and other unseen markup
 
 ```<!DOCTYPE html>``` Declares the doctype so the browser knows whether or not to expect HTML4 or HTML5
 
