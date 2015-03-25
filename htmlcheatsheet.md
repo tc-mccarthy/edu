@@ -1,61 +1,58 @@
 ## Basic Tags
-<pre>
-	<html></html> Creates an HTML document
 
-	<head></head> Sets off the title and other information that isn’t displayed on the web page itself
+```<html></html>``` Creates an HTML document
 
-	<body></body> Sets off the visible portion of the document
-</pre>
+```<head></head>``` Sets off the title and other information that isn’t displayed on the web page itself
+
+```<body></body>``` Sets off the visible portion of the document
+
 
 ## Text Tags
-<pre>
-	<pre></pre> Creates preformatted text
 
-	<h1></h1> Creates the largest headline
+```<pre></pre>``` Creates preformatted text
 
-	<h6></h6> Creates the smallest headline
+```<h1></h1>``` Creates the largest headline
 
-	<strong></strong> Creates bold text
+```<h6></h6>``` Creates the smallest headline
 
-	<em></em> Creates italic text (em for emphasize)
-</pre>
+```<strong></strong>``` Creates bold text
+
+```<em></em>``` Creates italic text (em for emphasize)
+
 
 ## Links
-<pre>
-	<a href="URL"></a> Creates a hyperlink
+```<a href="URL"></a>``` Creates a hyperlink
 
-	<a href="mailto:EMAIL"></a> Creates a mailto link
+```<a href="mailto:EMAIL"></a>``` Creates a mailto link
 
-	<a href="#NAME"></a> Creates an anchor tag -- a link to a location within this document
-</pre>
-Formatting
+```<a href="#ID"></a>``` Creates an anchor tag -- a link to a location within this document
 
-<pre>
-	<p></p> Creates a new paragraph
 
-	<br /> Inserts a line break
+## Formatting
 
-	<ol></ol> Creates a numbered list (ol stands for ordered list)
+```<p></p>``` Creates a new paragraph
 
-	<ul></ul> Creates a bulleted list (ul stands for unordered list)
+```<br />``` Inserts a line break
 
-	<li></li> Precedes each list item, and adds a number or symbol depending upon the type of list selected
+```<ol></ol>``` Creates a numbered list (ol stands for ordered list)
 
-	<div> A generic tag used to format large blocks of HTML, also used for stylesheets </div>
+```<ul></ul>``` Creates a bulleted list (ul stands for unordered list)
 
-	<img src="url" /> Adds an image
+```<li></li>``` Precedes each list item, and adds a number or symbol depending upon the type of list selected
 
-	<hr /> Inserts a horizontal rule
-</pre>
+```<div></div>``` A generic tag used to format large blocks of HTML, also used for stylesheets
+
+```<img src="url" />``` Adds an image
+
+```<hr />``` Inserts a horizontal rule
+
 
 ## Tables -- CAN NOT BE MADE TRULY RESPONSIVE
 
-<pre>
-	<table></table> Creates a table
+```<table></table>``` Creates a table
 
-	<tr></tr> Creates a row
+```<tr></tr>``` Creates a row
 
-	<td></td> Creates a cell
+```<td></td>``` Creates a cell
 
-	<th></th> Creates a header cell (top of the column)
-</pre>
+```<th></th>``` Creates a header cell (top of the column)
