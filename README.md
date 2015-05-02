@@ -5,6 +5,7 @@ Templates and gists for developer reference
 ## Contents
 * Bootstrap templates jade | html
 * [HTML cheat sheet](https://github.com/tc-mccarthy/edu/blob/master/htmlcheatsheet.md)
+* KnightLab TimelineJS Custom embed template
 
 ##Coming soon
 * CSS cheat sheet
