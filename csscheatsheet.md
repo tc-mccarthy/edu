@@ -9,7 +9,8 @@
 
 ```TAG.CLASS``` would allow you to select all elements with a specific tag AND a specific class. 
 
-```<div class='bob'></div> 
+```
+<div class='bob'></div> 
 <img class='bob' />
 ``` 
 
