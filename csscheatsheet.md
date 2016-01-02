@@ -28,13 +28,13 @@ would select BOTH the div AND the image
 
 Sometimes you want to select a finite group or even singular elements. IDs are one way to select a single element, but not every element will have an ID so we should get creative.
 
-```<div class='students'>
-<div class='female brunette'></div>
-<div class='female brunette'></div>
-<div class='female blonde'></div>
-<div class='male brunette'></div>
-<div class='female blonde'></div>
-```
+    <div class='students'>
+    <div class='female brunette'></div>
+    <div class='female brunette'></div>
+    <div class='female blonde'></div>
+    <div class='male brunette'></div>
+    <div class='female blonde'></div>
+
 
 To select only elements which have both **female** AND **brunette** as classes we chain their selectors
 
