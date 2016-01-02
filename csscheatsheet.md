@@ -22,7 +22,9 @@ div.bob```
 This would select the div and ignore the image.
 
 ```
-.bob``` would select BOTH the div AND the image
+.bob``` 
+
+would select BOTH the div AND the image
 
 ### Chaining
 
