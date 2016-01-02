@@ -13,7 +13,7 @@
 
 to select the div with the class **bob** in the above code you would select
 
-````div.bob````
+```div.bob```
 
 This would select the div and ignore the image.
 
