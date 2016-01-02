@@ -50,7 +50,9 @@ When an element is inside of another it's called **nesting**
 
 We represent nested elements with spaces when selecting a DOM element.
 
-```<div class='spice-girls'><div class='geri'></div></div>```
+    <div class='spice-girls'>
+    	<div class='geri'></div>
+    </div>
 
 To select the element with the class **geri** that's inside of the element with the class **spice-girls** we use selectors and spaces.
 
