@@ -38,11 +38,11 @@ Sometimes you want to select a finite group or even singular elements. IDs are o
 
 To select only elements which have both **female** AND **brunette** as classes we chain their selectors
 
-```.female.brunette```
+    .female.brunette
 
 If we wanted **female** OR **brunette** we would use a comma between the selectors
 
-```.female, .brunette```
+    .female, .brunette
 
 ### Finding children
 
