@@ -7,8 +7,6 @@ Sometimes, when we stretch out to larger screens, we need to make minor tweaks f
 You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
 */
 
-/* All of your base/mobile styles go here */
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -58,6 +56,8 @@ table {
 	border-spacing: 0;
 }
 
+
+/* Start your base/mobile styles here */
 
 
 /* Tablet/Desktop overrides */
