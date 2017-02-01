@@ -28,8 +28,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 16px; /* Sets default font-size to 16px, ensuring 1em = 16px; */
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -58,13 +56,14 @@ table {
 
 
 /* Start your base/mobile styles here */
-
+html, body{
+  font-size: 16px; /* Sets default font-size to 16px, ensuring 1em = 16px; */
+}
 
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px){
   /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-
 }
 
 @media(min-width: 729px){
