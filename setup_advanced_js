@@ -3,7 +3,7 @@ echo "Installing Homebrew, a package manager that will make computer set up a lo
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 clear
 
-echo "Updating the binaries for nodejs, python and ruby so we know everyone is running the same version. Installs casks to make other binary installs simpler"
+echo "Updating the binaries for nodejs, python and ruby so we know everyone is running the same version. Installs cask to make other binary installs simpler"
 brew install nodejs python ruby cask
 
 echo "Install firefox, chrome, sublime text, atom, textwrangler to make sure everyone is running the same versions"
@@ -12,7 +12,7 @@ clear
 
 brew doctor
 
-echo "Installing Oh My ZSH so we all have the same shell and its tailored to Git!"
+echo "Installing Oh My ZSH so we all have the same shell and it's tailored to Git!"
 curl -L http://install.ohmyz.sh | sh
 clear
 
