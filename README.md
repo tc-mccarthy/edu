@@ -13,11 +13,11 @@ Templates, cheatsheets and other assistance for devs in training
 - Mobile-first templates [[css](templates/css/mobile-first.css)][[html](templates/html/mobile-first.html)]
 - [KnightLab TimelineJS Custom embed template](templates/timelineJS)
 - Twitter bootstrap journo template [[html](templates/html/bootstrap.html)][[jade](templates/jade/bootstrap.jade)]
-- Scraper -- default NodeJS setup and file structure for a scraper [view](templates/scraper)
+- Scraper -- default NodeJS setup and file structure for a scraper [[view](templates/scraper)]
 
 ## Scripts
 
-- Advanced Javascript student mac setup (installs Git, homebrew, Atom, Sublime, TextWrangler, etc) [view](scripts/setup_advanced_js)
+- Advanced Javascript student mac setup (installs Git, homebrew, Atom, Sublime, TextWrangler, etc) [[view](scripts/setup_advanced_js)]
 
 ### Run directly via command line using
 
