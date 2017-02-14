@@ -28,3 +28,7 @@ Templates, cheatsheets and other assistance for devs in training
 Tutorials
 
 - [Starting a simple HTTP Server using python](tuts/simplehttpserver.md)
+
+## Configs
+
+- Recommended configuration for script atom packages. [[view](configs/atom.cson)]
