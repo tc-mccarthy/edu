@@ -1,13 +1,35 @@
 # EDU Templates
 
-Templates and gists for developer reference
+Templates, cheatsheets and other assistance for devs in training
 
-## Contents
-* Bootstrap templates jade | html
-* [HTML cheat sheet](https://github.com/tc-mccarthy/edu/blob/master/htmlcheatsheet.md)
-* KnightLab TimelineJS Custom embed template
+## Cheat sheets
 
-##Coming soon
-* CSS cheat sheet
+- [css](cheatsheets/css.md)
+- [html](cheatsheets/html.md)
+- [git](cheatsheets/git.md)
+- [shell](cheatsheets/shell.md)
 
-###Request template and sample material via github tickets
+## Templates
+
+- Mobile-first templates [[css](templates/css/mobile-first.css)][[html](templates/html/mobile-first.html)]
+- [KnightLab TimelineJS Custom embed template](templates/timelineJS)
+- Twitter bootstrap journo template [[html](templates/html/bootstrap.html)][[jade](templates/jade/bootstrap.jade)]
+- Scraper -- default NodeJS setup and file structure for a scraper [[view](templates/scraper)]
+
+## Scripts
+
+- Advanced Javascript student mac setup (installs Git, homebrew, Atom, Sublime, TextWrangler, etc) [[view](scripts/setup_advanced_js)]
+
+### Run directly via command line using
+
+`curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/stage/scripts/setup_advanced_js | bash`
+
+## Tuts
+
+Tutorials
+
+- [Starting a simple HTTP Server using python](tuts/simplehttpserver.md)
+
+## Configs
+
+- Recommended configuration for script atom packages. [[view](configs/atom.cson)]

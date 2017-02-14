@@ -1,0 +1,37 @@
+"*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+    general:
+      _analyticsUserId: ""
+    html:
+      beautify_on_save: true
+      indent_inner_html: true
+    js:
+      beautify_on_save: true
+      brace_style: "collapse-preserve-inline"
+      eval_code: true
+      indent_with_tabs: true
+      jslint_happy: true
+      keep_array_indentation: true
+      keep_function_indentation: true
+      space_after_anon_function: true
+    json:
+      beautify_on_save: true
+      disabled: true
+      eval_code: true
+    markdown:
+      beautify_on_save: true
+    scss:
+      align_assignments: true
+      beautify_on_save: true
+    sql:
+      beautify_on_save: true
+    xml:
+      beautify_on_save: true
+  core:
+    telemetryConsent: "no"
+  jslint:
+    hideOnNoErrors: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
