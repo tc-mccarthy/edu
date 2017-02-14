@@ -7,6 +7,7 @@ Templates, cheatsheets and other assistance for devs in training
 - [css](cheatsheets/css.md)
 - [html](cheatsheets/html.md)
 - [git](cheatsheets/git.md)
+- [shell](cheatsheets/shell.md)
 
 ## Templates
 
