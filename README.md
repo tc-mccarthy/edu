@@ -1,10 +1,14 @@
 # EDU Templates
 
-Templates and gists for developer reference
+Templates, cheatsheets and other assistance for devs in training
 
-## Contents
+## Templates
 
-- Mobile-first templates [css](templates/css/mobile-first.css) | [html](templates/html/mobile-first.html)
-- [HTML cheat sheet](https://github.com/tc-mccarthy/edu/blob/master/htmlcheatsheet.md)
-- KnightLab TimelineJS Custom embed template
-- CSS cheat sheet
+- Mobile-first templates [[css](templates/css/mobile-first.css)] | [[html](templates/html/mobile-first.html)]
+- [KnightLab TimelineJS Custom embed template](templates/timelineJS)
+- [Twitter bootstrap journo template](templates/html/bootstrap.html)
+
+## Cheat sheets
+
+- [css](cheatsheets/css.md)
+- [html](cheatsheets/html.md)
