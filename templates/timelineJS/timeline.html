@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"> <!-- set the character set -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- first step to a responsive site -->
-    <title>TimelineJS CUSTOM EMBED</title>
-    
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://dev.data.newsday.com/design/timelinejs/css/wwII.css" rel="stylesheet">
 
-    <!-- Your styles should be called here -->
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>TimelineJS CUSTOM EMBED</title>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-   <div id="timeline-embed"></div>
-    
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">
-        var timeline_config = {
-            width:              '100%',
-            height:             '600',
-            source:             'ENTER THE GOOGLE SPREADSHEET PUBLISH TO WEB URL',
-            embed_id:           'timeline-embed',               //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
-            start_at_end:       false,                          //OPTIONAL START AT LATEST DATE
-            start_zoom_adjust:  '3',                            //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
-            hash_bookmark:      true,                           //OPTIONAL LOCATION BAR HASHES
-            font:               'Bevan-PotanoSans',             //OPTIONAL FONT
-            maptype:            'watercolor',                   //OPTIONAL MAP STYLE
-            css:                '/css/timeline.css',             //OPTIONAL PATH TO CSS
-        }
-    </script>
-    <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
-    
-    <!-- Your javascript should be called here -->
-  </body>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Your styles should be called here -->
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="timeline-embed"></div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var timeline_config = {
+                width: '100%',
+                height: '600',
+                source: 'ENTER THE GOOGLE SPREADSHEET PUBLISH TO WEB URL',
+                embed_id: 'timeline-embed', //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
+                start_at_end: false, //OPTIONAL START AT LATEST DATE
+                start_zoom_adjust: '3', //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
+                hash_bookmark: true, //OPTIONAL LOCATION BAR HASHES
+                font: 'Bevan-PotanoSans', //OPTIONAL FONT
+                maptype: 'watercolor', //OPTIONAL MAP STYLE
+                css: '/css/timeline.css', //OPTIONAL PATH TO CSS
+            }
+        </script>
+        <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+
+        <!-- Your javascript should be called here -->
+    </body>
+
 </html>

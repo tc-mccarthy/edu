@@ -21,7 +21,7 @@ Templates, cheatsheets and other assistance for devs in training
 
 ### Run directly via command line using
 
-`curl "https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/setup_advanced_js" | bash`
+`curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/stage/scripts/setup_advanced_js | bash`
 
 ## Tuts
 
