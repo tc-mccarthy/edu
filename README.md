@@ -6,13 +6,14 @@ Templates, cheatsheets and other assistance for devs in training
 
 - [css](cheatsheets/css.md)
 - [html](cheatsheets/html.md)
+- [git](cheatsheets/git.md)
 
 ## Templates
 
 - Mobile-first templates [[css](templates/css/mobile-first.css)][[html](templates/html/mobile-first.html)]
 - [KnightLab TimelineJS Custom embed template](templates/timelineJS)
 - Twitter bootstrap journo template [[html](templates/html/bootstrap.html)][[jade](templates/jade/bootstrap.jade)]
-- Scraper -- default NodeJS setup and file structure for a scraper [view](tempates/scraper)
+- Scraper -- default NodeJS setup and file structure for a scraper [view](templates/scraper)
 
 ## Scripts
 
