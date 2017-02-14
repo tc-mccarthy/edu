@@ -14,7 +14,7 @@ echo "Setup atom extensions"
 apm install project-view project-manager atom-beautify jslint
 
 echo "Configuring atom"
-curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/stage/configs/atom.cson > ~/.atom/config.cson
+curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/configs/atom.cson > ~/.atom/config.cson
 
 echo "Installing Oh My ZSH so we all have the same shell and it's tailored to Git!"
 curl -L http://install.ohmyz.sh | sh
