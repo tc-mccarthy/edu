@@ -13,13 +13,20 @@ $(document).ready(function () { //on DOM ready, bind clicks
 		e.preventDefault(); //disable the button's default behavior
 
 		/*
-			Go through each fruit, one by one, and increment the totals for cost and calories. You can do this with the .each method from jQuery.
-			Doing it this way lets the JS be agnostic to your fruit selection, pricing and calorie count.
-			Now you can add and remove fruit from the form on a whim and easily modify price points and calorie counts, all without touching the JS
+			Go through each fruit, one by one, and increment the totals for cost and calories.
+			You can do this with the $.each method from jQuery.
+
+			Doing it this way allows the JS to be agnostic
+			to your fruit selection, pricing and calorie count.
+
+			This method also allows you to add and remove
+			fruit from the form on a whim or easily modify
+			price points and calorie counts, all without touching the JS
 		*/
 
 		$(".fruit").each(function () { //look at each element with the class 'fruit', one by one.
-			//Our variables are all preceeded by a single 'var' statement, which looks neater but still confines them to the scope of this function.
+			//Our variables are all preceeded by a single 'var' statement,
+			//which looks neater but still confines them to the scope of this function.
 
 			var fruit = $(this), //just like when clicking on classes, we need to know which one of the fruits our code is looking at now.
 				quantity = parseInt(fruit.val()), //store the number of pieces of this fruit the user requested
