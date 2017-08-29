@@ -4,10 +4,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 clear
 
 echo "Updating the binaries for nodejs, python and ruby so we know everyone is running the same version. Installs cask to make other binary installs simpler"
-brew install python ruby cask
+brew install nodejs python ruby cask
 
-echo "Install sublime text, atom, textwrangler to make sure everyone is running the same versions"
-brew cask install sublime-text atom textwrangler
+echo "Install sublime text, atom, textwrangler and mamp to make sure everyone is running the same versions"
+brew cask install sublime-text atom textwrangler mamp
 clear
 
 echo "Setup atom extensions"
