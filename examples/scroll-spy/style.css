@@ -1,0 +1,139 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* THIS IS A RESET
+DO NOT EDIT THIS STUFF */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* BEGIN YOUR STYLES HERE */
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body.dark {
+  background-color: #000;
+  color: #EEE;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.content {
+  padding: 1em;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.35em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100vh;
+  transition: width .5s ease-in-out;
+  box-sizing: border-box;
+}
+
+.content.active {
+  width: 75%;
+  margin: 0;
+}
+
+.sidebar {
+  position: absolute;
+  right: -100%;
+  width: 25%;
+  height: 100vh;
+  padding: 1em;
+  transition: right .5s ease-in-out;
+  box-sizing: border-box;
+}
+
+.sidebar .container {
+  position: fixed;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.slide {
+  height: 100vh;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.slide img {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+  /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+@media(min-width: 729px) {
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
