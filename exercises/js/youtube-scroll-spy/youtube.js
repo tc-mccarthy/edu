@@ -85,6 +85,10 @@ var CUNY_YT = function (ele) {
 		if (apiReady === true && self.ready === true) {
 			console.log("Scrolling");
 			//if this element is sticky, currently playing and isInView
+
+			console.log("Sticky", sticky);
+			console.log("isPlaying", isPlaying);
+			console.log("Visible", isInView(container));
 			if (sticky && isPlaying && !isInView(container)) {
 				stickyContainer.addClass("sticky");
 			}
