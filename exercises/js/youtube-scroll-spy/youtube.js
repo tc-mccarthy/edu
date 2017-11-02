@@ -3,7 +3,9 @@ var apiReady = false;
 var CUNY_YT = function (ele) {
 	var self = this,
 		width = ele.width(),
-		height = width * .5625;
+		height = width * .5625,
+		sticky = ele.hasClass("stickyEnabled"),
+		isPlaying = false;
 
 	if (typeof window.player_counter === "undefined") {
 		window.player_counter = 0;
@@ -22,6 +24,7 @@ var CUNY_YT = function (ele) {
 	ele.attr("id", player_id);
 
 	var container = ele.closest(".video");
+	var stickyContainer = ele.closest(".stickyEnabled");
 
 	this.ready = false;
 
@@ -33,6 +36,13 @@ var CUNY_YT = function (ele) {
 
 	var onPlayerStateChange = function (event) {
 		console.log("The state has changed");
+
+		if (event === YT.PlayerState.PLAYING) {
+			isPlaying = true;
+		} else {
+			isPlaying = false;
+		}
+
 		//play pause event stuff
 	};
 
@@ -41,8 +51,8 @@ var CUNY_YT = function (ele) {
 		width: width,
 		videoId: ele.data("id"),
 		events: {
-			'onReady': onPlayerReady,
-			'onStateChange': onPlayerStateChange
+			onReady: onPlayerReady,
+			onStateChange: onPlayerStateChange
 		}
 	});
 
@@ -74,6 +84,11 @@ var CUNY_YT = function (ele) {
 		console.log("self.ready", self.ready);
 		if (apiReady === true && self.ready === true) {
 			console.log("Scrolling");
+			//if this element is sticky, currently playing and isInView
+			if (sticky && isPlaying && !isInView(container)) {
+				stickyContainer.addClass("sticky");
+			}
+
 			if (isInView(container)) {
 				console.log("playing video");
 				self.mute();
