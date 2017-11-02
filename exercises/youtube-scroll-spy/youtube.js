@@ -27,7 +27,7 @@ var CUNY_YT = function (ele) {
 	var onPlayerStateChange = function (event) {
 		console.log("The state has changed");
 		//play pause event stuff
-	}
+	};
 
 	this.player = new YT.Player(player_id, {
 		height: height,
