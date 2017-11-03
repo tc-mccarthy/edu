@@ -22,6 +22,7 @@ var CUNY_YT = function (ele) {
 
 	ele.wrap(wrapper);
 	ele.attr("id", player_id);
+	ele.removeClass("stickyEnabled");
 
 	var container = ele.closest(".video");
 	var stickyContainer = ele.closest(".stickyEnabled");
@@ -29,15 +30,16 @@ var CUNY_YT = function (ele) {
 	this.ready = false;
 
 	var onPlayerReady = function (event) {
-		console.log("The player is ready");
+		// console.log("The player is ready");
 		//player ready stuff
 		self.ready = true;
 	};
 
 	var onPlayerStateChange = function (event) {
-		console.log("The state has changed");
-
-		if (event === YT.PlayerState.PLAYING) {
+		// console.log("The state has changed");
+		console.log("State change", event);
+		if (event.data == YT.PlayerState.PLAYING) {
+			console.log("Playing");
 			isPlaying = true;
 		} else {
 			isPlaying = false;
@@ -80,16 +82,15 @@ var CUNY_YT = function (ele) {
 	};
 
 	$(window).on("scroll", function () {
-		console.log("apiReady", apiReady);
-		console.log("self.ready", self.ready);
+		// console.log("apiReady", apiReady);
+		// console.log("self.ready", self.ready);
 		if (apiReady === true && self.ready === true) {
-			console.log("Scrolling");
+			// console.log("Scrolling");
 			//if this element is sticky, currently playing and isInView
 
-			console.log("Sticky", sticky);
-			console.log("isPlaying", isPlaying);
-			console.log("Visible", isInView(container));
 			if (sticky && isPlaying && !isInView(container)) {
+				console.log("Making sticky");
+				console.log("Sticky container", stickyContainer);
 				stickyContainer.addClass("sticky");
 			}
 
