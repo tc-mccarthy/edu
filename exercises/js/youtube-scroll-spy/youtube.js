@@ -43,6 +43,10 @@ var CUNY_YT = function (ele) {
 			isPlaying = true;
 		} else {
 			isPlaying = false;
+
+			if (sticky === true) {
+				stickyContainer.removeClass("sticky");
+			}
 		}
 
 		//play pause event stuff
