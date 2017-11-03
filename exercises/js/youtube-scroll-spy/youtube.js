@@ -17,7 +17,7 @@ var CUNY_YT = function (ele) {
 		wrapper = "<div class='video'></div>";
 
 	if (ele.hasClass("stickyEnabled")) {
-		wrapper = "<div class='stickyEnabled'>" + wrapper + "</div>";
+		wrapper = "<div class='stickyWrapper'><div class='stickyEnabled'>" + wrapper + "</div></div>";
 	}
 
 	ele.wrap(wrapper);
@@ -26,6 +26,7 @@ var CUNY_YT = function (ele) {
 
 	var container = ele.closest(".video");
 	var stickyContainer = ele.closest(".stickyEnabled");
+	var stickyWrapper = ele.closest(".stickyWrapper");
 
 	this.ready = false;
 
@@ -92,10 +93,12 @@ var CUNY_YT = function (ele) {
 			// console.log("Scrolling");
 			//if this element is sticky, currently playing and isInView
 
-			if (sticky && isPlaying && !isInView(container)) {
+			if (sticky && isPlaying && !isInView(stickyWrapper)) {
 				console.log("Making sticky");
 				console.log("Sticky container", stickyContainer);
 				stickyContainer.addClass("sticky");
+			} else {
+				stickyContainer.removeClass("sticky");
 			}
 
 			if (isInView(container)) {

@@ -93,6 +93,7 @@ html, body {
   bottom: 0;
   right: 0;
   width: 400px;
+  z-index: 3;
 }
 
 .video iframe {
