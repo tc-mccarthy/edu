@@ -7,7 +7,7 @@ echo "Updating the binaries for nodejs, python and ruby so we know everyone is r
 brew install nodejs python ruby cask
 
 echo "Install sublime text, atom, textwrangler and mamp to make sure everyone is running the same versions"
-brew cask install sublime-text atom textwrangler mamp
+brew cask install sublime-text atom mamp
 clear
 
 echo "Setup atom extensions"
