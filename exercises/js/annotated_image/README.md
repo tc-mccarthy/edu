@@ -7,9 +7,9 @@ This exercise leverages CSS positioning and jQuery to help you tell a story by e
 2. Place a headline on the page, using the proper tag, called `Curbside Produce`
 3. Beneath the headline, create a `div.hotspot` and inside of that div nest `img/fruit.jpg`
 4. Beneath `div.hotspot` create a paragraph that reads
-```
-Pictured above is your typical manhattan fruit stand. Click on any the spots to learn more about the fruit highlighted.
-```
+>Pictured above is your typical manhattan fruit stand.
+>Click on any the spots to learn more about the fruit highlighted.
+
 5. Beneath the paragraph create `div.modal div.inner`
 6. We need some styles to make this work.
     - `h1` and `p` should have `text-align: center;`
@@ -34,3 +34,6 @@ Pictured above is your typical manhattan fruit stand. Click on any the spots to 
 | Grapes  | `#grapes`  | Grapes have seeds in the wild but modern science has been able to remove them
 | Plums   | `#plums`   | Plums are purple
 | Apples  | `#apples`  | Apples are widely available in the big apple
+
+## Homework
+Repeat this exercise, without copy/pasting, using the `img/hiv.jpg`. The image is of school kids who are HIV positive coming home from school in an ambulance. Your assignment should feature 5 points, each containing a fact about HIV and its treatment in third-world countries. You should create a git repository for this assignment and submit the link to Sandeep and I as your assignment turn-in. Remember to check your work on mobile, tablet and desktop.
