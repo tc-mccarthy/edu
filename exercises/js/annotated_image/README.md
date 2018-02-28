@@ -21,7 +21,7 @@ This exercise leverages CSS positioning and jQuery to help you tell a story by e
     - `.spot` should have `position: absolute; height: 50px; width: 50px; border-radius: 50%; background-color: #000000;` so that all spots are the same size, circular and ready to be placed anywhere within `div.hotspot`
 7. Create a `.spot` for each of the fruits in the table below, complete with an ID
 
-8. Now you can view your page in your browser to figure out the positioning for each hotspot. For example if you inspect `#bananas` you can set your styles to be `right: 10%; top: 25%; background-color: #FF9900;` and you will have a yellow dot over the bananas. You should work in `%` so that you don't have to make many changes for different device sizes. Remember to copy/paste the styles you work out for each fruit into your spreadsheet as you go.
+8. Now you can view your page in your browser to figure out the positioning for each hotspot. For example if you inspect `#bananas` you can set your styles to be `right: 10%; top: 25%; background-color: #FF9900;` and you will have a yellow dot over the bananas. You should work in `%` so that you don't have to make many changes for different device sizes. Remember to copy/paste the styles you work out for each fruit into your stylesheet as you go.
 
 9. Each of your `.spot` elements should also get a data-description attribute. You can pull the description from the table below.
 
