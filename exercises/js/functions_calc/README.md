@@ -1,9 +1,9 @@
-# Annotated Image
+# Functions, Comparisons and a Calculator
 
-This exercise leverages CSS positioning and jQuery to help you tell a story by equipping an image with 'hotspots' that users can click on to get more information.
+This exercise leverages data attributes, html and javascript to build a simple calculator that can be used to relate current events to the average user.
 
 ## Exercise
-In the interest of time, the stylesheet and a skeleton of the HTML has been provided for you. We will go over the styles in class so make sure you add comments to your copy of the project to remind yourself about the finer points of the page.
+In the interest of time, the stylesheet and a skeleton of the HTML has been provided for you. We will go over the styles in class so make sure you add comments to your copy of the project to remind yourself about the finer points of the page. This exercise is based on data found in (https://www.nytimes.com/2018/03/05/us/politics/trump-tariffs-steel-aluminum-nafta.html)[the New York times] about a 25-percent tariff President Trump would place on steel along with a 10-percent tariff he would place on aluminum. The pretext of this exercise is that you are an interactive journalist working for a construction trade magazine and have been tasked with helping readers calculate the impact this would have on their cost.
 
 1. Within the calculator is a table. Tables are made up of rows `tr` and cells `td`. Header rows are made up of `th`. We'll need a way to tell javascript which rows are items vs. which rows are not. Add an add `.item` to each row that our javascript will need to evaluate.
 
