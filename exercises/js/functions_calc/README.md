@@ -28,4 +28,7 @@ In the interest of time, the stylesheet and a skeleton of the HTML has been prov
 
 
 ## Homework
-Remove the need for the "compare" button by having the totals update as the user adds values. Make every other row gray in background color to improve legibility. Place the pre and post totals next to each other on desktop. Make the page prettier.
+1. Remove the need for the "compare" button by having the totals update as the user adds values.
+2. Make every other row gray in background color to improve legibility.
+3. Place the pre and post totals next to each other on desktop.
+4. Make the page prettier.
