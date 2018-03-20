@@ -1,56 +1,35 @@
-$(document).ready(function(){
-    $(".item").find("input").on("keyup keydown keypress change", function(e){
-        var input = $(this),
-            item = input.closest(".item"),
-            qty = parseFloat(item.find(".qty").val()),
-            cost = parseFloat(item.find(".cost").val()),
-            tariff = parseFloat(item.data("tariff-percent")),
-            total = parseFloat(qty * cost),
-            total_tariff = addTariff(total, tariff);
+$(document).ready(function () {
+	$("input").on("keyup keydown keypress change", function (e) {
+		var this_input = $(this),
+			this_row = this_input.closest(".item"),
+			quantity = parseFloat(this_row.find(".qty").val()),
+			cost = parseFloat(this_row.find(".cost").val()),
+			tariff = parseFloat(this_row.data("tariff-percent")),
+			pre_tariff_cost = (cost * quantity),
+			post_tariff_cost = (pre_tariff_cost + (pre_tariff_cost * (tariff / 100)));
 
-        if(isNumber(cost) && isNumber(qty)){
-            item.find(".pre_total").find("span").text(total);
-            item.find(".post_total").find("span").text(total_tariff);
-        }
-    });
+		// console.log("Quantity", quantity);
 
-    $(".calculate").on("click", function(e){
-        e.preventDefault();
+		this_row.find(".pre_total").find("span").text(pre_tariff_cost);
+		this_row.find(".post_total").find("span").text(post_tariff_cost);
 
-        var pre_cost = 0,
-            post_cost = 0;
+		var pre_total = 0,
+			post_total = 0;
 
-        $("td.pre_total").each(function(){
-            var pre_total = $(this),
-                total = pre_total.find("span").text();
+		$(".pre_total").each(function () {
+			//do stuff
+			var this_pre_total = parseFloat($(this).find("span").text());
+			pre_total = pre_total + this_pre_total;
+		});
 
-                console.log("Totalling pre...");
+		$(".post_total").each(function () {
+			//more stuff
+			var this_post_total = parseFloat($(this).find("span").text());
+			post_total = post_total + this_post_total;
+		});
 
-            total = parseFloat(total);
+		$("#pre_total").find("span").text(pre_total);
+		$("#post_total").find("span").text(post_total);
 
-            pre_cost += total;
-        });
-
-        $("td.post_total").each(function(){
-            var post_total = $(this),
-                total = post_total.find("span").text();
-
-                console.log("Totalling post...");
-            total = parseFloat(total);
-
-            post_cost += total;
-        });
-
-        $("#pre_total").find("span").text(pre_cost);
-        $("#post_total").find("span").text(post_cost);
-    });
+	});
 });
-
-
-function isNumber(num){
-    return !isNaN(parseFloat(num));
-}
-
-function addTariff(total, tariff){
-    return total + (total * (tariff / 100));
-}

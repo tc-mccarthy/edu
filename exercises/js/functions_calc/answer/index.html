@@ -29,7 +29,7 @@
             <h1>How will steel and aluminum tariffs impact your construction business?</h1>
             <p>The following calculator will help you estimate how much of an affect President Trump's proposed tariffs would have on the cost of a construction job. Please enter the following values based on the cost for the entire job.</p>
 
-            <p class="small">This is a loose estimate and is designed to show a loose impact rather than an exact change.</p>
+            <p>This is a loose estimate and is designed to show a loose impact rather than an exact change.</p>
             <table>
                 <tr>
                     <th>Item</th>
@@ -40,35 +40,28 @@
                 </tr>
                 <tr class="item" data-tariff-percent="0">
                     <td>Labor</td>
-                    <td><input type="number" class="qty" placeholder="Workers" /></td>
-                    <td><input type="number" class="cost" placeholder="Wage" /></td>
+                    <td>
+                        <input class="qty" type="number" placeholder="Workers" />
+                    </td>
+                    <td><input class="cost" type="number" placeholder="Wage" /></td>
                     <td class="pre_total">$<span></span></td>
                     <td class="post_total">$<span></span></td>
                 </tr>
                 <tr class="item" data-tariff-percent="25">
                     <td>Steel materials</td>
-                    <td><input type="number" class="qty" /></td>
-                    <td><input type="number" class="cost" /></td>
+                    <td><input class="qty" type="number" /></td>
+                    <td><input class="cost" type="number" /></td>
                     <td class="pre_total">$<span></span></td>
                     <td class="post_total">$<span></span></td>
                 </tr>
                 <tr class="item" data-tariff-percent="10">
                     <td>Aluminum materials</td>
-                    <td><input type="number" class="qty" /></td>
-                    <td><input type="number" class="cost" /></td>
-                    <td class="pre_total">$<span></span></td>
-                    <td class="post_total">$<span></span></td>
-                </tr>
-                <tr class="item" data-tariff-percent="0">
-                    <td>Other materials</td>
-                    <td><input type="number" class="qty" /></td>
-                    <td><input type="number" class="cost" /></td>
+                    <td><input class="qty" type="number" /></td>
+                    <td><input class="cost" type="number" /></td>
                     <td class="pre_total">$<span></span></td>
                     <td class="post_total">$<span></span></td>
                 </tr>
             </table>
-
-            <button class="calculate">Compare</button>
 
             <div id="pre_total" class="total">
                 <h2>Cost before tariffs</h2>
