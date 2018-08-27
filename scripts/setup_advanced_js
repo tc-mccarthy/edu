@@ -1,22 +1,27 @@
 #!/bin/bash
-echo "Installing Homebrew, a package manager that will make computer set up a lot easier. This process also installs Git"
+echo "Installing Homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 clear
 
-echo "Updating the binaries for nodejs, python and ruby so we know everyone is running the same version. Installs cask to make other binary installs simpler"
-brew install python ruby cask
+echo "Installing nodejs, python, ruby, cask, php-cs-fixer"
+brew install nodejs python3 ruby cask php-cs-fixer
 
-echo "Install sublime text, atom, textwrangler to make sure everyone is running the same versions"
-brew cask install sublime-text atom
+echo "Level the playing field for firefox and chrome"
+brew cask install --force firefox google-chrome
+
+echo "Install sublime-text, atom, slack"
+brew cask install sublime-text atom slack
 clear
 
+brew doctor
+
 echo "Setup atom extensions"
-apm install project-view project-manager atom-beautify less-than-slash
-
-echo "Configuring atom"
+apm install atom-beautify pigments less-than-slash seti-ui
 curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/configs/atom.cson > ~/.atom/config.cson
+alias pip="pip3"
+pip install --upgrade sqlparse
 
-echo "Installing Oh My ZSH so we all have the same shell and it's tailored to Git!"
+echo "Installing Oh My ZSH"
 curl -L http://install.ohmyz.sh | sh
 clear
 

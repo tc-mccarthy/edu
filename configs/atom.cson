@@ -2,6 +2,10 @@
   "atom-beautify":
     css:
       beautify_on_save: true
+      indent_size: 4
+    executables:
+      "php-cs-fixer":
+        path: "/usr/local/bin/php-cs-fixer"
     general:
       _analyticsUserId: ""
     html:
@@ -16,21 +20,29 @@
       keep_array_indentation: true
       keep_function_indentation: true
       space_after_anon_function: true
+      indent_size: 4
     json:
       beautify_on_save: true
       disabled: true
       eval_code: true
     markdown:
       beautify_on_save: true
+    php:
+      beautify_on_save: true
     scss:
       align_assignments: true
       beautify_on_save: true
+      indent_size: 4
     sql:
       beautify_on_save: true
     xml:
       beautify_on_save: true
   core:
     telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "one-dark-syntax"
+    ]
   jslint:
     hideOnNoErrors: true
   "tree-view":
