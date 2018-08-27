@@ -38,11 +38,12 @@
     xml:
       beautify_on_save: true
   core:
-    telemetryConsent: "no"
-    themes: [
-      "seti-ui"
-      "one-dark-syntax"
-    ]
+      openEmptyEditorOnStart: false
+      telemetryConsent: "no"
+      themes: [
+        "seti-ui"
+        "one-dark-syntax"
+      ]
   jslint:
     hideOnNoErrors: true
   "tree-view":
