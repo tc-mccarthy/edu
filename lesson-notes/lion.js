@@ -37,7 +37,7 @@ const lion = function (lion_name) {
 	/**
 	 * This method dethrones a king and kills the lion, but we're ok with it
 	 */
-	this.comeUppins = () => {
+	this.comeUppance = () => {
 		this.isKing = false;
 		this.alive = false;
 	};
