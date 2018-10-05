@@ -165,10 +165,10 @@ simba.makeKing();
 simba.marry(nala);
 
 /**
- * Kovu and Vitani come along
+ * Kiara and Kion come along
  */
-const kovu = new lion("kovu");
-const vitani = new lion("vitani");
+const kiara = new lion("kiara");
+const kion = new lion("kion");
 
 
 /**
@@ -177,5 +177,5 @@ const vitani = new lion("vitani");
  *
  * Method updates the child and parent arrays of each instance and their spouses
  */
-nala.hasChild(vitani);
-simba.hasChild(kovu);
+nala.hasChild(kiara);
+simba.hasChild(kion);
