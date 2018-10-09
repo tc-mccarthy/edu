@@ -10,7 +10,7 @@ const lib = {
 	 *
 	 * A wrapper on requestJS, this method accepts a URL string or a requestJS option object.
 	 * Method gives back a response with error details or an object containing the response object,
-	 * body and a cheerio object preloaded with the body contents 
+	 * body and a cheerio object preloaded with the body contents
 	 *
 	 * @param Object|String opts RequestJS compatible object or URL string
 	 * @return Promise
@@ -27,7 +27,7 @@ const lib = {
 					reject(err);
 				} else {
 					const $ = cheerio.load(body);
-					resolve({ $: $, body: body, request: request });
+					resolve({ $: $, body: body, response: response });
 				}
 			});
 		});

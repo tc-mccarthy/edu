@@ -14,7 +14,7 @@ const url = "https://en.wikipedia.org/wiki/New_York_Jets";
  */
 lib.get(url).then((data) => {
 	/** Fancy notation for extracting certain object properties as standalone variables */
-	const { $, body, request } = data;
+	const { $, body, response } = data;
 
 	/* Regular ol' jQuery for getting things */
 	const page_title = $("h1").text();
