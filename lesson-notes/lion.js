@@ -1,7 +1,7 @@
 /**
  * Intro to objects
  *
- * Thank you Disney!
+ * Thank you, Disney!
  */
 
 const lion = function (lion_name) {
@@ -37,7 +37,7 @@ const lion = function (lion_name) {
 	/**
 	 * This method dethrones a king and kills the lion, but we're ok with it
 	 */
-	this.comeUppins = () => {
+	this.comeUppance = () => {
 		this.isKing = false;
 		this.alive = false;
 	};
@@ -165,17 +165,17 @@ simba.makeKing();
 simba.marry(nala);
 
 /**
- * Kovu and Kiara come along
+ * Kiara and Kion come along
  */
-const kovu = new lion("kovu");
 const kiara = new lion("kiara");
+const kion = new lion("kion");
 
 
 /**
- * Though they aren't actually siblings, we made each of them a child of
+ * We made each of them a child of
  * nala and simba to demonstrate the three way merge leveraging objects by reference.
  *
  * Method updates the child and parent arrays of each instance and their spouses
  */
 nala.hasChild(kiara);
-simba.hasChild(kovu);
+simba.hasChild(kion);
