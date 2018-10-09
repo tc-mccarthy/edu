@@ -27,7 +27,8 @@ const lib = {
 					reject(err);
 				} else {
 					const $ = cheerio.load(body);
-					resolve({ $: $, body: body, response: response });
+					const data = { $: $, body: body, response: response };
+					resolve(data);
 				}
 			});
 		});
