@@ -1,0 +1,16 @@
+{
+  "name": "node-scraper-shell",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "cheerio": "^0.22.0",
+    "lodash": "^4.15.0",
+    "moment": "^2.14.1",
+    "mysql": "^2.11.1",
+    "request": "^2.74.0"
+  }
+}
