@@ -11,6 +11,14 @@ function onYouTubeIframeAPIReady() {
 			player_id = `player_${player_number}`,
 			video_id = $this_player.data("youtube-id");
 
+		let wrapper = "<div class='video'></div>";
+
+		if ($this_player.hasClass("stickyEnabled")) {
+			wrapper = "<div class='stickyWrapper'><div class='stickyEnabled'>" + wrapper + "</div></div>";
+		}
+
+		$this_player.wrap(wrapper);
+
 		$this_player.attr("id", player_id);
 
 		const player = new YT.Player(player_id, {

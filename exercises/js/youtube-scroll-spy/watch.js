@@ -733,8 +733,14 @@ const watch = function ($ele, options) {
 		const observer = new IntersectionObserver((entries, observer) => {
 			const response = { entries: entries, observer: observer };
 
-			if (entries[0].isIntersecting) {
-				resolve(response);
+			if ($ele.data("inView")) {
+				if (entries[0].isIntersecting) {
+					resolve(response);
+				}
+			} else {
+				if (!entries[0].isIntersecting) {
+					resolve(response);
+				}
 			}
 		}, options);
 
