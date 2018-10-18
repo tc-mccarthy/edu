@@ -31,6 +31,20 @@ function onYouTubeIframeAPIReady() {
 			}
 		});
 	});
+
+	const watcher = new watch($(".stickyWrapper"), { visibility: 0.25 });
+
+	watcher.inView((response) => {
+		console.log("Watcher is in view");
+		console.log(response);
+		$(".stickyEnabled").removeClass("sticky");
+	}).outView((response) => {
+		console.log("Watcher is out of view");
+		console.log(response);
+		$(".stickyEnabled").addClass("sticky");
+	});
+
+
 }
 
 function onPlayerReady(event) {
@@ -38,6 +52,7 @@ function onPlayerReady(event) {
 }
 
 function onPlayerStateChange(event) {
+	let done = false;
 	if (event.data == YT.PlayerState.PLAYING && !done) {
 		setTimeout(stopVideo, 6000);
 		done = true;
