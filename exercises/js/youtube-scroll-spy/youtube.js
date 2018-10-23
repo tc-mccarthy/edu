@@ -4,6 +4,7 @@ const tag = document.createElement('script'),
 tag.src = "https://www.youtube.com/iframe_api";
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+
 function onYouTubeIframeAPIReady() {
 	$(".youtube").each(function () {
 		const $this_player = $(this),
@@ -31,30 +32,25 @@ function onYouTubeIframeAPIReady() {
 			}
 		});
 	});
-
-	const watcher = new watch($(".stickyWrapper"), { visibility: 0.25 });
-
-	watcher.inView((response) => {
-		console.log("Watcher is in view");
-		console.log(response);
-		$(".stickyEnabled").removeClass("sticky");
-	}).outView((response) => {
-		console.log("Watcher is out of view");
-		console.log(response);
-		$(".stickyEnabled").addClass("sticky");
-	});
-
-
 }
 
 function onPlayerReady(event) {
-	event.target.playVideo();
+	const $this_player = $(event.target.getIframe());
+	const id = $this_player.attr("id");
+	const player = event.target;
+	const watcher = new Watch($this_player);
+
+	watcher.inView(() => {
+		player.playVideo();
+	}).outView(() => {
+		player.stopVideo();
+	});
 }
 
 function onPlayerStateChange(event) {
 	let done = false;
 	if (event.data == YT.PlayerState.PLAYING && !done) {
-		setTimeout(stopVideo, 6000);
+		// setTimeout(stopVideo, 6000);
 		done = true;
 	}
 }
