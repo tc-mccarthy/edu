@@ -21,6 +21,17 @@ lib.get(url).then((data) => {
 
 	/* Regular ol' console log for checking the work */
 	console.log(page_title);
+
+	const test = [
+		{ header: "test1" },
+		{ header: "test2" },
+		{ header: "test3" },
+		{ header: "test4" }
+	];
+
+	models.scrape.create(test).then((results) => {
+		console.log(results);
+	});
 }).catch((err) => {
 	/** This is where errors go -- if the get(url) method has an error, it will be handled here */
 	console.log(err);
