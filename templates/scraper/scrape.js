@@ -2,11 +2,13 @@ const _ = require("lodash"),
 	async = require("async"),
 		config = require(__dirname + "/config.js"),
 		models = require(__dirname + "/models/index.js").models.autoLoad(),
-		lib = require(__dirname + "/lib/scraperLib.js");
+		lib = require(__dirname + "/lib/scraperLib.js"),
+		Table = require(__dirname + "/models/base.js").Base;
 
 
 /* BEGIN SCRAPER HERE */
-const url = "https://en.wikipedia.org/wiki/New_York_Jets";
+const url = "https://en.wikipedia.org/wiki/New_York_Jets",
+	wiki = new Table("wiki");
 
 /**
  * Leverages the get method from the scraperLib.
@@ -29,7 +31,7 @@ lib.get(url).then((data) => {
 		{ header: "test4" }
 	];
 
-	models.scrape.create(test).then((results) => {
+	wiki.create(test).then((results) => {
 		console.log(results);
 	});
 }).catch((err) => {
