@@ -1,7 +1,6 @@
 const _ = require("lodash"),
 	async = require("async"),
 		config = require(__dirname + "/config.js"),
-		models = require(__dirname + "/models/index.js").models.autoLoad(),
 		lib = require(__dirname + "/lib/scraperLib.js"),
 		Table = require(__dirname + "/models/base.js").Base;
 
