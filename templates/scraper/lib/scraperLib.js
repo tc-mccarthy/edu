@@ -19,7 +19,7 @@ const lib = {
 		if (typeof opts === "string") {
 			opts = { url: opts };
 		}
-		opts = Object.assign({ method: "GET" }, opts);
+		opts = Object.assign({ method: "GET", headers: { "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36" } }, opts);
 
 		return new Promise((resolve, reject) => {
 			request(opts, (err, response, body) => {
