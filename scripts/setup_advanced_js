@@ -19,10 +19,15 @@ echo "Setup atom extensions"
 apm install atom-beautify pigments less-than-slash seti-ui
 curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/configs/atom.cson > ~/.atom/config.cson
 alias pip="pip3"
-pip install --upgrade sqlparse
+pip install --upgrade sqlparse virtualenv
 
 echo "Installing Oh My ZSH"
 curl -L http://install.ohmyz.sh | sh
 clear
+
+echo "Configuring terminal profile"
+cd ~/Downloads
+curl -O https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/CUNY.terminal
+open CUNY.terminal
 
 echo "Install complete!"
