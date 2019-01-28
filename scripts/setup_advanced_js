@@ -21,6 +21,9 @@ curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/configs/atom
 alias pip="pip3"
 pip install --upgrade sqlparse virtualenv
 
+echo "Installing XCode"
+mas install 497799835
+
 echo "Installing Oh My ZSH"
 curl -L http://install.ohmyz.sh | sh
 clear
@@ -29,5 +32,8 @@ echo "Configuring terminal profile"
 cd ~/Downloads
 curl -O https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/CUNY.terminal
 open CUNY.terminal
+
+echo "Installing XCode"
+brew install --force mas
 
 echo "Install complete!"
