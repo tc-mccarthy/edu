@@ -109,9 +109,9 @@ var Base = function (table) {
 				});
 			}, (err) => {
 				if (success.length == 0) {
-					reject({ success: success, error: error });
+					reject({ success: success, error: err });
 				} else {
-					resolve({ success: success, error: error });
+					resolve({ success: success, error: err });
 				}
 			});
 		});
@@ -144,9 +144,9 @@ var Base = function (table) {
 				});
 			}, (err) => {
 				if (success.length == 0) {
-					reject({ success: success, error: error });
+					reject({ success: success, error: err });
 				} else {
-					resolve({ success: success, error: error });
+					resolve({ success: success, error: err });
 				}
 			});
 		});
@@ -183,9 +183,9 @@ var Base = function (table) {
 				});
 			}, (err) => {
 				if (success.length == 0) {
-					reject({ success: success, error: error });
+					reject({ success: success, error: err });
 				} else {
-					resolve({ success: success, error: error });
+					resolve({ success: success, error: err });
 				}
 			});
 		});
