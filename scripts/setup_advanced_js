@@ -18,11 +18,7 @@ brew doctor
 echo "Setup atom extensions"
 apm install atom-beautify pigments less-than-slash seti-ui
 curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/configs/atom.cson > ~/.atom/config.cson
-alias pip="pip3"
-pip install --upgrade sqlparse virtualenv
-
-echo "Installing XCode"
-mas install 497799835
+pip3 install --upgrade sqlparse virtualenv
 
 echo "Installing Oh My ZSH"
 curl -L http://install.ohmyz.sh | sh
