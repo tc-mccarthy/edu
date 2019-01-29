@@ -16,7 +16,7 @@ clear
 brew doctor
 
 echo "Setup atom extensions"
-apm install atom-beautify pigments less-than-slash seti-ui
+apm install atom-beautify pigments less-than-slash seti-ui open-in-browsers
 curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/configs/atom.cson > ~/.atom/config.cson
 pip3 install --upgrade sqlparse virtualenv
 
