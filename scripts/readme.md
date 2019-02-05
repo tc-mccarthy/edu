@@ -21,7 +21,7 @@ Install XCode Command line tools and XCode when possible. Also implements an eas
 
 ## Windows-specific configuration
 
-The script reviews the PowerShell version. If you are not running at least version 3 it upgrades your PowerShell and .NET framework to add support for TLS1.2, which is the minimum supported TLS version. A system restart may be required due to this. The script may also prompt you that it needs to be restarted -- many of the above dependency changes update `$PATH` and, while it employs `refreshenv`, this doesn't always work. The script will check is Python is available toward the end of its run, and, if its not, it will prompt you to fire the script again, which will just pick up where it left off.
+This script always updates you to the latest version of PowerShell. It also verifies that your version of the .NET framework supports TLS1.2 and performs the necessary upgrades if it doesn't. A system restart may be required due to this.
 
 ## Atom configuration
 

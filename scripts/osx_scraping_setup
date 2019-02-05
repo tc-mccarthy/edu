@@ -1,0 +1,8 @@
+#!/bin/bash
+
+curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/osx_setup | bash
+
+brew cask install mamp
+
+clear
+echo "Install complete!"

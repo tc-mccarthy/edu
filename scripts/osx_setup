@@ -29,7 +29,5 @@ cd ~/Downloads
 curl -O https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/CUNY.terminal
 open CUNY.terminal
 
-echo "Installing XCode"
-brew install --force mas
-
+clear
 echo "Install complete!"
