@@ -19,9 +19,13 @@ These scripts are designed to help students configure their computers with the s
 
 Install XCode Command line tools and XCode when possible. Also implements an easier-on-the-eyes terminal theme for easy over-the-shoulder code review.
 
+`curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/osx_setup | bash`
+
 ## Windows-specific configuration
 
 This script always updates you to the latest version of PowerShell. It also verifies that your version of the .NET framework supports TLS1.2 and performs the necessary upgrades if it doesn't. A system restart may be required due to this.
+
+`iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/windows_setup.ps1'))`
 
 ## Atom configuration
 
