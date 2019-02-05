@@ -18,13 +18,15 @@ Templates, cheatsheets and other assistance for devs in training
 
 ## Scripts
 
--   Advanced Javascript student mac setup (installs Git, homebrew, Atom, Sublime, TextWrangler, etc) \[[view](scripts/setup_advanced_js)]
+In order to make your coding experience smoother, I have provided the following configurations scripts which will automate the install and setup of the various applications you'll be using in class (Git, homebrew, atom, sublime, etc) \[[readme](scripts/)]
 
 ### OSX Configuration one-liner
 
 `curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/osx_setup | bash`
 
 ### Windows Configuration one-liner
+
+All commands, including the one-liner, should be run in the PowerShell. PowerShell ISE and Command prompt do not work properly with this script.
 
 `iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/windows_setup.ps1'))`
 

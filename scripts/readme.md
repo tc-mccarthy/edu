@@ -25,6 +25,8 @@ Install XCode Command line tools and XCode when possible. Also implements an eas
 
 This script always updates you to the latest version of PowerShell. It also verifies that your version of the .NET framework supports TLS1.2 and performs the necessary upgrades if it doesn't. A system restart may be required due to this.
 
+All commands, including the one-liner, should be run in the PowerShell. PowerShell ISE and Command prompt do not work properly with this script.
+
 `iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/windows_setup.ps1'))`
 
 ## Atom configuration
