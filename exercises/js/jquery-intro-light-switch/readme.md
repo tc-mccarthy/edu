@@ -31,3 +31,5 @@ This exercise leverages clever CSS and jQuery to have a light switch toggle the 
 and
 
 `font-family: 'Electrolize', sans-serif;`
+
+10. The JS is very basic -- wait for the DOM to be ready and then begin listening for clicks on `.light.on`. On click we should add the class `light-off` to `body`. It should be removed when `.light.off` is clicked on.
