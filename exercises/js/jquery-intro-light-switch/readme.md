@@ -24,7 +24,7 @@ Please create and clone a new repo called light-switch-demo
 
 6.  All `img` tags should have a `width: 100%;`. If the have the class `.light` they should be `display: block`, `position: absolute;` and be vertically centered.
 
-7.  Anything with `.light.off` should not be displayed by default. When the body class has `.light-off` anything with `.light.on` should be hidden and anything with `.light.on` should be displayed.
+7.  Anything with `.light.off` should not be displayed by default. When the body tag has `.light-off` anything with `.light.on` should be hidden and anything with `.light.off` should be displayed.
 
 8.  When `body` has `.light-off` text should be white and the background black.
 
