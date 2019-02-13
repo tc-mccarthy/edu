@@ -2,6 +2,10 @@
 
 This exercise leverages clever CSS and jQuery to have a light switch toggle the "lights" on and off. The solution is provided as a guide -- don't peak!
 
+### Preview
+
+<https://tc-mccarthy.github.io/edu/exercises/js/jquery-intro-light-switch/solution/>
+
 ### Instructions
 
 1.  Set up a container and allow it to expand to be no wider than 800px. It should also center itself, have 5px of padding all around and the text it contains should be centered.
