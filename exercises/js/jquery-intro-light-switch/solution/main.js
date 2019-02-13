@@ -1,11 +1,13 @@
-$("body").on("click", ".light.on", function (e) {
-	e.preventDefault();
+$(document).ready(function () {
+	$(".light.on").on("click", function (e) {
+		e.preventDefault();
 
-	$("body").addClass("light-off");
-});
+		$("body").addClass("light-off");
+	});
 
-$("body").on("click", ".light.off", function (e) {
-	e.preventDefault();
+	$(".light.off").on("click", function (e) {
+		e.preventDefault();
 
-	$("body").removeClass("light-off");
+		$("body").removeClass("light-off");
+	});
 });
