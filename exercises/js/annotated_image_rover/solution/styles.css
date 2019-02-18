@@ -61,6 +61,7 @@ img {
     color: #FFF;
     /* Contains content when closing the overlay */
     overflow: hidden;
+    cursor: pointer;
 }
 
 .dot .inner {
