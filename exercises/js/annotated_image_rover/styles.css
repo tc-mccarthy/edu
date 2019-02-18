@@ -35,8 +35,79 @@ p {
     padding: 10px;
 }
 
+.container.photo {
+    padding: 0;
+    position: relative;
+}
+
 img {
     width: 100%;
+}
+
+.dot {
+    /** Sets an equal height and width and sets border-radius to 50%,
+     * all of which combined makes a perfect circle */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* Position absolute so we can place it anywhere */
+    position: absolute;
+    display: block;
+    /* Adds a translucent white border for easier visibility */
+    border: 3px solid rgba(255, 255, 255, 0.65);
+    /* Animates circle to overlay */
+    transition: all 0.5s ease-in-out;
+    /* All text inside is white */
+    color: #FFF;
+}
+
+.dot .inner {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.dot .inner .content {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+}
+
+.dot .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.dot .close:after {
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    content: "\f00d";
+}
+
+/*****************************
+* Dot customizations go here
+******************************/
+/*********************************
+ * For when .dot has been clicked
+**********************************/
+.dot.active {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    z-index: 2;
+}
+
+.dot.active .inner {
+    opacity: 1;
 }
 
 /*********************************************************************
