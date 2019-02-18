@@ -1,0 +1,149 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container.photo {
+    padding: 0;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    border: 3px solid rgba(255, 255, 255, 0.65);
+    transition: all 0.5s ease-in-out;
+}
+
+.dot.orange {
+    background-color: rgba(255, 133, 25, 0.65);
+    color: #FFF;
+}
+
+.dot.blue {
+    background-color: rgba(0, 93, 255, 0.65);
+    color: #FFF;
+}
+
+.dot.green {
+    background-color: rgba(12, 232, 196, 0.65);
+    color: #FFF;
+}
+
+.dot .inner {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    overflow: hidden;
+}
+
+.dot .inner .content {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+}
+
+.dot .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.dot .close:after {
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    content: "\f00d";
+}
+
+.dot.wheels {
+    left: 58%;
+    bottom: 20%;
+    transform: translate(-58%, 20%);
+}
+
+.dot.camera {
+    top: 15%;
+    left: 39%;
+    transform: translate(-39%, -15%);
+}
+
+.dot.solar {
+    top: 55%;
+    left: 26%;
+    transform: translate(-26%, -55%);
+}
+
+.dot.active {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    z-index: 2;
+}
+
+.dot.active .inner {
+    opacity: 1;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
