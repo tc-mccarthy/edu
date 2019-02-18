@@ -43,9 +43,7 @@ Please create and clone a new repo called annotated-image-rover. Copy the `index
       horizontal = right OR horizontal = (left x -1)
       vertical = bottom OR vertical = (top x -1)
 
-      ==================================================
       examples
-      ==================================================
 
       .dot.wheels {
           left: 42%;
@@ -53,8 +51,18 @@ Please create and clone a new repo called annotated-image-rover. Copy the `index
           transform: translate(-42%, 27%);
       }
 
+      or
+
       .dot.wheels {
           left: 42%;
           top: 27%;
           transform: translate(-42%, -27%);
       }
+
+15. Instead of waiting for DOM ready, we can just listen to the `body` for all clicks and check if the click happened on a `.dot` using the following syntax
+
+    $("body").on("click", ".dot", function(e){
+      // on click add an active class to the dot that was clicked
+    });
+
+16. When `.dot .close` is clicked, remove the active class from the `.close`'s parent `.dot`
