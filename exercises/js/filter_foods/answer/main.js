@@ -1,27 +1,22 @@
 /**
- * Wait for the DOM to be ready
+ * Listen for changes in the select menu
  */
-$(document).ready(function () {
+
+$("body").on("change", ".filter", function (e) {
 	/**
-	 * Listen for changes in the select menu
+	 * Capture the currently selected value from the select menu
+	 */
+	const value = $(this).val();
+
+	/**
+	 * First remove the active class from any .active .items
 	 */
 
-	$(".filter").on("change", function (e) {
-		/**
-		 * Capture the currently selected value from the select menu
-		 */
-		var value = $(this).val();
+	$(".item.active").removeClass("active");
 
-		/**
-		 * First remove the active class from any .active .items
-		 */
+	/**
+	 * Then add active to any items that have the class corresponding to the filter value
+	 */
 
-		$(".item.active").removeClass("active");
-
-		/**
-		 * Then add active to any items that have the class corresponding to the filter value
-		 */
-
-		$("." + value).addClass("active");
-	});
+	$("." + value).addClass("active");
 });
