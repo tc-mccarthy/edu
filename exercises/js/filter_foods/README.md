@@ -8,6 +8,19 @@ While I wasn't especially imaginative in the choices here, you need to develop o
 
 This is a collaborative exercise but the prompts will be nearly identical to how they would be delivered in a newsroom, and we'll work through them together.
 
+## Preflight
+
+You know the drill.
+1. Pull an update for `edu`
+2. Your repo should be called `filter_foods`
+3. Copy/paste the skeleton and `img` directory (no `readme` or `solution`) into your newly-cloned repo
+4. Before you begin, commit what you have (from the copy/paste) so that you have a clean skeleton to reset to should you need to
+5. No peeking at the solution
+
+## Preview
+
+https://tc-mccarthy.github.io/edu/exercises/js/filter_foods/solution/
+
 ## Getting started
 
 The editor of this piece, world-renowned food critic Anton Ego, has worked with the design team to lay out the application in a grid powered by flexbox. You'll notice that when the page loads initially all of the choices are visible. Ego has asked that you keep this, but that you make it so that when a user chooses a category from the filter dropdown, the visible choices are narrowed only to those that fit within the selection.
