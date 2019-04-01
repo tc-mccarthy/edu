@@ -49,7 +49,7 @@ $version = if($p -is [System.Management.Automation.ErrorRecord])
 
 ## Upgrade pip
 python -m pip install --upgrade pip
-pip install --upgrade sqlparse virtualenv
+pip install --upgrade sqlparse virtualenv jupyter
 
 ## set up atom
 apm install atom-beautify pigments less-than-slash seti-ui open-in-browsers
