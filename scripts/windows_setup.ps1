@@ -28,8 +28,8 @@ set-executionpolicy remotesigned -s localmachine
 
 echo "Installing remaining dependencies"
 ## Install dependencies
-choco install -y powershell python3 googlechrome firefox sublimetext3 slack openssh nodejs ruby git curl atom
-choco upgrade -y powershell python3 googlechrome firefox sublimetext3 slack openssh nodejs ruby git curl atom
+choco install -y --ignore-checksums powershell python3 googlechrome firefox sublimetext3 slack openssh nodejs ruby git curl atom
+choco upgrade -y --ignore-checksums powershell python3 googlechrome firefox sublimetext3 slack openssh nodejs ruby git curl atom
 
 setx path "%PATH%;%LOCALAPPDATA%\Atom\bin"
 
