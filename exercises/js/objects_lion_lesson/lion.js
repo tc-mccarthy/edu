@@ -84,8 +84,7 @@ const lion = function (lion_name) {
 	 */
 	this.hasChild = (cub) => {
 		this.child.push(cub);
-		this.spouse.child.push(cub);
-		cub.parent = [this, this.spouse];
+		cub.parent.push(this);
 	};
 };
 
@@ -178,4 +177,9 @@ const kion = new lion("kion");
  * Method updates the child and parent arrays of each instance and their spouses
  */
 nala.hasChild(kiara);
-simba.hasChild(kion);
+simba.hasChild(kiara);
+
+kovu.growUp();
+kiara.growUp();
+
+kiara.marry(kovu);
