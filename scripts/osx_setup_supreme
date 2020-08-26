@@ -3,6 +3,9 @@ echo "Installing Homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 clear
 
+echo "Installing nodejs, python, ruby, cask, php-cs-fixer"
+brew install --force nodejs python3 ruby cask php-cs-fixer
+
 echo "Level the playing field for firefox and chrome"
 brew cask install --force firefox google-chrome
 
