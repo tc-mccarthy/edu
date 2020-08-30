@@ -10,8 +10,8 @@ if ($PSVersionTable.PSVersion.Major -le 2)
   }
 
   echo "Upgrading PowerShell to 3+ and installing dependencies"
-  choco install -y dotnet4.7 powershell googlechrome sublimetext3 slack openssh git atom
-  choco upgrade -y dotnet4.7 powershell googlechrome sublimetext3 slack openssh git atom
+  choco install -y dotnet4.7 powershell python3 googlechrome firefox sublimetext3 slack openssh nodejs ruby git curl atom
+  choco upgrade -y dotnet4.7 powershell python3 googlechrome firefox sublimetext3 slack openssh nodejs ruby git curl atom
   shutdown -r -f -t 05 -c "Restarting... Run this script again after restart"
   Stop-Process -Id $PID
 }
@@ -28,8 +28,8 @@ set-executionpolicy remotesigned -s localmachine
 
 echo "Installing remaining dependencies"
 ## Install dependencies
-choco install -y --ignore-checksums powershell googlechrome sublimetext3 slack openssh git atom
-choco upgrade -y --ignore-checksums powershell googlechrome sublimetext3 slack openssh git atom
+choco install -y --ignore-checksums powershell python3 googlechrome firefox sublimetext3 slack openssh nodejs ruby git curl atom
+choco upgrade -y --ignore-checksums powershell python3 googlechrome firefox sublimetext3 slack openssh nodejs ruby git curl atom
 
 setx path "%PATH%;%LOCALAPPDATA%\Atom\bin"
 
@@ -46,6 +46,11 @@ $version = if($p -is [System.Management.Automation.ErrorRecord])
     Invoke-Item (start powershell $PSCommandPath)
     Stop-Process -Id $PID
 }
+
+## Upgrade pip
+python -m pip install --upgrade pip
+pip install --upgrade sqlparse virtualenv jupyter
+
 ## set up atom
 apm install atom-beautify pigments less-than-slash seti-ui open-in-browsers
 
