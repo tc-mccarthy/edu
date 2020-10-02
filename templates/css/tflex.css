@@ -1,0 +1,345 @@
+/**
+* Some pre-baked flex styles I commonly use and would like to share
+*
+* Author: TC McCarthy
+*/
+/* line 9, ../assets/scss/tflex.scss */
+.tflex {
+  display: flex;
+}
+/* line 12, ../assets/scss/tflex.scss */
+.tflex.grid {
+  flex-wrap: wrap;
+}
+/* line 16, ../assets/scss/tflex.scss */
+.tflex.space-around {
+  justify-content: space-around;
+}
+/* line 20, ../assets/scss/tflex.scss */
+.tflex.space-between {
+  justify-content: space-between;
+}
+/* line 24, ../assets/scss/tflex.scss */
+.tflex .tflex-item {
+  margin: 8px 0;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-5 {
+  flex-basis: 5%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-10 {
+  flex-basis: 10%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-15 {
+  flex-basis: 15%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-20 {
+  flex-basis: 20%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-25 {
+  flex-basis: 25%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-30 {
+  flex-basis: 30%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-35 {
+  flex-basis: 35%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-40 {
+  flex-basis: 40%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-45 {
+  flex-basis: 45%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-50 {
+  flex-basis: 50%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-55 {
+  flex-basis: 55%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-60 {
+  flex-basis: 60%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-65 {
+  flex-basis: 65%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-70 {
+  flex-basis: 70%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-75 {
+  flex-basis: 75%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-80 {
+  flex-basis: 80%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-85 {
+  flex-basis: 85%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-90 {
+  flex-basis: 90%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-95 {
+  flex-basis: 95%;
+}
+/* line 28, ../assets/scss/tflex.scss */
+.tflex .tflex-item.tflex-100 {
+  flex-basis: 100%;
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-5 {
+    flex-basis: 5%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-10 {
+    flex-basis: 10%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-15 {
+    flex-basis: 15%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-20 {
+    flex-basis: 20%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-25 {
+    flex-basis: 25%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-30 {
+    flex-basis: 30%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-35 {
+    flex-basis: 35%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-40 {
+    flex-basis: 40%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-45 {
+    flex-basis: 45%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-50 {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-55 {
+    flex-basis: 55%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-60 {
+    flex-basis: 60%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-65 {
+    flex-basis: 65%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-70 {
+    flex-basis: 70%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-75 {
+    flex-basis: 75%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-80 {
+    flex-basis: 80%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-85 {
+    flex-basis: 85%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-90 {
+    flex-basis: 90%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-95 {
+    flex-basis: 95%;
+  }
+}
+@media (min-width: 681px) {
+  /* line 36, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-tablet-100 {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-5 {
+    flex-basis: 5%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-10 {
+    flex-basis: 10%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-15 {
+    flex-basis: 15%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-20 {
+    flex-basis: 20%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-25 {
+    flex-basis: 25%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-30 {
+    flex-basis: 30%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-35 {
+    flex-basis: 35%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-40 {
+    flex-basis: 40%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-45 {
+    flex-basis: 45%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-50 {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-55 {
+    flex-basis: 55%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-60 {
+    flex-basis: 60%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-65 {
+    flex-basis: 65%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-70 {
+    flex-basis: 70%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-75 {
+    flex-basis: 75%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-80 {
+    flex-basis: 80%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-85 {
+    flex-basis: 85%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-90 {
+    flex-basis: 90%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-95 {
+    flex-basis: 95%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../assets/scss/tflex.scss */
+  .tflex .tflex-item.tflex-desktop-100 {
+    flex-basis: 100%;
+  }
+}

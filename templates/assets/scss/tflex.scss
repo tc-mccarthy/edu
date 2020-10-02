@@ -1,0 +1,52 @@
+/**
+* Some pre-baked flex styles I commonly use and would like to share
+*
+* Author: TC McCarthy
+*/
+$tabletBP: 681px;
+$desktopBP: 769px;
+
+.tflex {
+    display: flex;
+
+    &.grid {
+        flex-wrap: wrap;
+    }
+
+    &.space-around {
+        justify-content: space-around;
+    }
+
+    &.space-between {
+        justify-content: space-between;
+    }
+
+    .tflex-item {
+        margin: 8px 0;
+        $i    : 5;
+        @while $i <= 100 {
+            &.tflex-#{$i} {
+                flex-basis: $i#{"%"};
+            }
+            $i: $i+5;
+        }
+        $i    : 5;
+        @while $i <= 100 {
+            @media(min-width: $tabletBP) {
+                &.tflex-tablet-#{$i} {
+                    flex-basis: $i#{"%"};
+                }
+            }
+            $i: $i+5;
+        }
+        $i    : 5;
+        @while $i <= 100 {
+            @media(min-width: $desktopBP) {
+                &.tflex-desktop-#{$i} {
+                    flex-basis: $i#{"%"};
+                }
+            }
+            $i: $i+5;
+        }
+    }
+}
