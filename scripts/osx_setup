@@ -4,10 +4,10 @@ bash "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/insta
 clear
 
 echo "Level the playing field for firefox and chrome"
-brew cask install --force firefox google-chrome
+brew install --force --cask firefox google-chrome
 
 echo "Install sublime-text, atom, slack"
-brew cask install --force sublime-text atom slack
+brew install --cask --force sublime-text atom slack
 clear
 
 brew doctor
