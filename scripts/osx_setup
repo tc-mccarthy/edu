@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Installing Homebrew"
-bash "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 clear
 
 echo "Level the playing field for firefox and chrome"
