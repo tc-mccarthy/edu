@@ -11,11 +11,9 @@ This is a collaborative exercise but the prompts will be nearly identical to how
 ## Preflight
 
 You know the drill.
-1. Pull an update for `edu`
-2. Your repo should be called `filter_foods`
-3. Copy/paste the skeleton and `img` directory (no `readme` or `solution`) into your newly-cloned repo
-4. Before you begin, commit what you have (from the copy/paste) so that you have a clean skeleton to reset to should you need to
-5. No peeking at the solution
+1. Create a repo should be called `filter_foods`
+2. I will provide you with a skeleton that includes some markup and rudamentary CSS. Copy/paste the files into your newly-cloned repo
+3. Before you begin, commit what you have (from the copy/paste) so that you have a clean skeleton to reset to should you need to
 
 ## Preview
 
@@ -23,8 +21,8 @@ https://tc-mccarthy.github.io/edu/exercises/js/filter_foods/solution/
 
 ## Getting started
 
-The editor of this piece, world-renowned food critic Anton Ego, has worked with the design team to lay out the application in a grid powered by flexbox. You'll notice that when the page loads initially all of the choices are visible. Ego has asked that you keep this, but that you make it so that when a user chooses a category from the filter dropdown, the visible choices are narrowed only to those that fit within the selection.
+The editor of this piece, world-renowned food critic Anton Ego, has worked with the design team to lay out the application in a grid powered by flex box. You'll notice that when the page loads initially all of the choices are visible. Ego has asked that you keep this, but that you make it so that when a user chooses a category from the filter dropdown, the visible choices are narrowed only to those that fit within the selection.
 
 This means you'll probably need some styles to show and hide each item and update the HTML to further classify each item so you can easily select it.
 
-Oh yeah, you'll want to learn a new trick that shows fewer items per row on mobile so that each item has a little more real-estate. Fewer items on mobile... or more items on not mobile?
+Fewer items on mobile... or more items on not mobile?

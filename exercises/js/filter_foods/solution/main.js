@@ -1,22 +1,21 @@
 /**
- * Listen for changes in the select menu
+ * Wait for the DOM to be ready
  */
 
-$("body").on("change", ".filter", function (e) {
-	/**
-	 * Capture the currently selected value from the select menu
-	 */
-	const value = $(this).val();
+document.addEventListener("DOMContentLoaded", e => {
+    const filter_dropdown = document.querySelector(".filter");
 
-	/**
-	 * First remove the active class from any .active .items
-	 */
+    filter_dropdown.addEventListener("change", e => {
+        const class_to_show = filter_dropdown.value;
 
-	$(".item.active").removeClass("active");
+        // first hide all items that are active
+        document.querySelectorAll("#fruits .item.active").forEach(i => {
+            i.classList.remove("active");
+        });
 
-	/**
-	 * Then add active to any items that have the class corresponding to the filter value
-	 */
-
-	$("." + value).addClass("active");
+        //then show all items that match the selector
+        document.querySelectorAll(`#fruits .item.${class_to_show}`).forEach(i => {
+            i.classList.add("active");
+        })
+    });
 });
