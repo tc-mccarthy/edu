@@ -49,14 +49,14 @@ img {
 
 .flexbox .item {
     flex-basis: 50%;
-    transition: all 0.5s ease-in-out;
 }
 
 .flexbox h4 {
     padding: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
-.flexbox .item.active {
+.flexbox .item.active h4 {
     background-color: #000;
     color: #fff;
 }
