@@ -1,0 +1,88 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* Start your base/mobile styles here */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.container.photo {
+    max-width: 1200px;
+    padding: 5px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.flex.filter div {
+    flex-basis: 100%;
+}
+
+.flex .item {
+    flex-basis: 48%;
+    display: none;
+}
+
+.flex .item h3 {
+    padding: 0 5px;
+}
+
+.flex .item.active {
+    display: block;
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    .flex .item {
+        flex-basis: 24%;
+    }
+    .flex.filter div {
+        flex-basis: 30%;
+    }
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
