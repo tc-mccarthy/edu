@@ -129,18 +129,24 @@ figcaption {
 }
 
 .annotate .dot .inner {
+    position: absolute;
     opacity: 0;
     color: #FFF;
-    padding: 13% 25px;
+    padding: 0 25px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.annotate .dot .inner .close {
+.annotate .dot .close {
     color: #FFF;
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 2em;
     text-decoration: none;
+    z-index: 3;
+    opacity: 0;
 }
 
 .annotate .dot.green {
@@ -198,7 +204,8 @@ figcaption {
     z-index: 2;
 }
 
-.annotate .dot.active .inner {
+.annotate .dot.active .inner,
+.annotate .dot.active .close {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
@@ -212,7 +219,7 @@ figcaption {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
     .annotate .dot .inner {
-        padding: 25% 75px;
+        padding: 0 75px;
     }
     #arm:not(.active) {
         top: 53%;
