@@ -35,11 +35,15 @@ run_setup() {
     echo "Install complete!"
 }
 
-sleep 2
+prompt(){
+    read -n 1 -s -r -p  "This script may prompt you for a password. When asked, please type in the password you use to sign into the computer and hit 'enter'. The terminal WILL NOT show characters or indicate your typing in any way. Your password WILL NOT be transmitted anywhere. Do you wish to continue? [y/n]" c
+    if [ $c == 'y' ]; then
+        run_setup
+    elif [ $c == 'n' ]; then
+        exit
+    else
+        prompt
+    fi
+}
 
-read -n 1 -s -r -p  "This script may prompt you for a password. When asked, please type in the password you use to sign into the computer and hit 'enter'. The terminal WILL NOT show characters or indicate your typing in any way. Your password WILL NOT be transmitted anywhere. Do you wish to continue? [y/n]" c
-
-if [ $c == 'y' ]; then
-    run_setup
-fi
-
+prompt
