@@ -15,13 +15,19 @@ These scripts are designed to help students configure their computers with the s
 9.  Git
 10. OpenSSH
 
-## Mac-specific configuration
+## Mac-specific developer configuration - BASIC
 
-Install XCode Command line tools and XCode when possible. Also implements an easier-on-the-eyes terminal theme for easy over-the-shoulder code review.
+Installs Git via XCode Command line tools, Atom, ZSH and other essentials for coding.
 
-`curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/osx_setup | bash`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/osx_setup)"`
 
-## Windows-specific configuration
+## Mac-specific anaconda configuration - BASIC
+
+Installs python3, anaconda, Git via XCode Command line tools and ZSH.
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/osx_setup)"`
+
+## Windows-specific configuration - BASIC
 
 This script always updates you to the latest version of PowerShell. It also verifies that your version of the .NET framework supports TLS1.2 and performs the necessary upgrades if it doesn't. A system restart may be required due to this.
 
