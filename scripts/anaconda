@@ -1,0 +1,36 @@
+#!/bin/bash
+## homebrew is an OSX package manager. Allows us to automate this whole process
+read -n 1 -s -r -p  "This script may prompt you for a password. When asked, please type in the password you use to sign into the computer and hit 'enter'. The terminal WILL NOT show characters or indicate your typing in any way. This is expected. Press any key to continue"
+
+
+echo "Installing Homebrew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+clear
+
+## we are installing python3 to ensure this computer has it since not every person is guaranteed to run the same version of OSX
+echo "Installing python3"
+brew install python3 --force
+brew upgrade python3 --force
+
+## installing anaconda from homebrew ensures its the latest version and that python3 is being used. Using the --force flag should
+## allow homebrew to do its work, even if anaconda is already installed
+echo "Installing anaconda"
+brew install --cask anaconda --force
+brew upgrade --cask anaconda --force
+clear
+
+## cleans up permissions
+brew doctor
+
+## switches terminal to ZSH if it's not already there. Older versions of mac used bash by default
+echo "Installing Oh My ZSH"
+curl -L http://install.ohmyz.sh | sh
+clear
+
+## adds some environment variables so that the homebrew version of anaconda is used and ZSH permissions errors are suppressed.
+echo "export PATH=\"/usr/local/anaconda3/bin:\$PATH\"" >> ~/.zshrc
+echo "export ZSH_DISABLE_COMPFIX=true" >> ~/.zshrc
+clear
+
+## We're done!
+echo "Install complete!"
