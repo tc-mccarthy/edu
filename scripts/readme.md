@@ -25,7 +25,7 @@ Installs Git via XCode Command line tools, Atom, ZSH and other essentials for co
 
 Installs python3, anaconda, Git via XCode Command line tools and ZSH.
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/osx_setup)"`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/anaconda)"`
 
 ## Windows-specific configuration - BASIC
 
