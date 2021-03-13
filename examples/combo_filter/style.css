@@ -63,6 +63,10 @@ select {
     display: none;
 }
 
+.flex .item.empty {
+    flex-basis: 100%;
+}
+
 .flex .item h3 {
     padding: 0 5px;
 }

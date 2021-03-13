@@ -42,9 +42,16 @@ function filter_movies() {
     });
 
     /**
-     * Show items that match the dropdowns
+     * Determine the nodelist of items that match the filters
      */
     const filtered_items = document.querySelectorAll(`.item.${animation_class}.${gender_class}.${magic_class}`);
+
+    /**
+     * If the nodelist is empty, this means no items match, so we should show the empty state
+     */
+    if (filtered_items.length === 0) {
+        document.querySelector(".item.empty").classList.add("active");
+    }
 
     filtered_items.forEach(function(item) {
         item.classList.add("active");
