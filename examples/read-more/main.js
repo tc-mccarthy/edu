@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
             const readmore_container = e.target.closest(".container.readmore");
 
             // determine the scroll height of the content within the box (how tall the content is when it isn't being cut off by our CSS)
-            const scrollHeight = readmore_container.scrollHeight;
+            const scrollHeight = readmore_container.scrollHeight * 1.1;
 
             // add the active class to the container to make the readmore gradient and button disappear
             readmore_container.classList.add("active");
