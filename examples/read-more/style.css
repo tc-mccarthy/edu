@@ -95,7 +95,7 @@ figcaption {
     /* So that we can place the read more link wherever we want */
     position: relative;
     /* So that we have an equivalent cut off on these */
-    max-height: 150px;
+    max-height: 200px;
     height: auto;
     /* When we update the max height, this will provide the accordion effect */
     transition: max-height 0.5s ease-in-out;
@@ -113,12 +113,29 @@ figcaption {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.container.readmore .expand {
+.container.readmore .expand,
+.container.readmore .expand:visited,
+.container.readmore .expand:hover {
     /* The link is absolute positioned to the bottom of the readmore container */
     position: absolute;
     width: 100%;
     text-align: center;
     bottom: 0;
+    padding: 10px 22px;
+    background: #FFF;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 1px dashed rgba(0, 0, 0, 0.25);
+}
+
+
+/* The down arrows after the read more */
+
+.container.readmore .expand:after {
+    font-family: FontAwesome;
+    margin-left: 5px;
+    content: '\f103';
 }
 
 
