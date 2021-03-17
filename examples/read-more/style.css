@@ -110,7 +110,7 @@ figcaption {
     top: 0;
     /* This is the gradient effect. By making the button container the full height of the readmore container, this fade out has no sharp edges */
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.65) 65%, rgba(255, 255, 255, 0) 100%);
 }
 
 .container.readmore .expand,
