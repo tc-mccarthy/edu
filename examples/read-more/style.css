@@ -1,0 +1,229 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+
+
+/** SET BORDER BOX EVERYWHERE */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/** APPLY BASE TAG STYLES */
+
+body,
+html {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+
+/** RESPONSIVE IMAGES */
+
+figure,
+img {
+    /* Sets image width to match parent */
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+
+/** Caption styles */
+
+.caption,
+figcaption {
+    font-size: 0.9rem;
+    color: #8e8a8a;
+    padding: 5px 0;
+}
+
+
+/** BASE CLASSES */
+
+
+/** Container styles to keep content from becoming too wide or coming too close to
+* mobile edge */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/** Images are allowed to be a little wider when broken out into their own container */
+
+.container.image {
+    max-width: 1200px;
+    padding: 0;
+}
+
+.container.image .caption,
+.container.image figcaption {
+    padding: 5px 10px;
+}
+
+
+/**
+* A new, special, read more container
+*/
+
+.container.readmore {
+    /* So that we can place the read more link wherever we want */
+    position: relative;
+    /* So that we have an equivalent cut off on these */
+    max-height: 150px;
+    height: auto;
+    /* When we update the max height, this will provide the accordion effect */
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.container.readmore .expand-button {
+    /* Make the button container absolute so we can make it the full height and width of the container */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* This is the gradient effect. By making the button container the full height of the readmore container, this fade out has no sharp edges */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.container.readmore .expand {
+    /* The link is absolute positioned to the bottom of the readmore container */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+
+
+/* When the readmore container has the active class, hide all of the readmore paraphernalia */
+
+.container.readmore.active .expand-button {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+
+/** Screens are the size of at least one device screen */
+
+.screen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/** for vertical centering */
+
+.screen.padd {
+    padding-top: 25%;
+}
+
+
+/** video setup */
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(9 / 16 * 100%);
+}
+
+.video.vertical {
+    padding-bottom: calc(16 / 9 * 100%);
+}
+
+.video iframe,
+.video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 769px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+}
+
+
+/*********************************************************************
+  YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 805px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container {
+        padding: 0;
+    }
+}
+
+
+/*********************************************************************
+  YOUR LARGE DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 1205px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container.image .caption,
+    .container.image figcaption {
+        padding: 5px 0;
+    }
+}
