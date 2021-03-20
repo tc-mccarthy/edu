@@ -1,0 +1,241 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+
+
+/** SET BORDER BOX EVERYWHERE */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/** APPLY BASE TAG STYLES */
+
+body,
+html {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+
+/** RESPONSIVE IMAGES */
+
+figure,
+img {
+    /* Sets image width to match parent */
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+
+/** Caption styles */
+
+.caption,
+figcaption {
+    font-size: 0.9rem;
+    color: #8e8a8a;
+    padding: 5px 0;
+}
+
+
+/** BASE CLASSES */
+
+
+/** Container styles to keep content from becoming too wide or coming too close to
+* mobile edge */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/** Images are allowed to be a little wider when broken out into their own container */
+
+.container.image {
+    max-width: 1200px;
+    padding: 0;
+}
+
+.container.image .caption,
+.container.image figcaption {
+    padding: 5px 10px;
+}
+
+
+/**
+* Calculator styles
+*/
+
+.calc-container {
+    background-color: #f7f7f7;
+    /* Calc background is slightly gray and the full width of the page */
+    padding: 22px 0;
+    /* 22px of vertical padding only */
+}
+
+.calculator .row .item img {
+    margin: 5px auto;
+    /* Air out above and below the image for each item */
+}
+
+.qty_container {
+    display: flex;
+    /* Make the qty_container a flex box so we can juxtapose the qty and unit */
+}
+
+.qty_container>div {
+    flex-basis: 90%;
+    /* Allow the input field in the qty container to take up 90% of the width */
+}
+
+
+/**
+* Styling the input fields to be the full width of the parent, with 7px of padding and turns off the default border 
+*/
+
+.qty_container input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 7px;
+    border: 0;
+}
+
+
+/**
+* The unit space has a gray background and takes up the remaining 10% of space as an indicator
+* to  the user how qty works
+*/
+
+.qty_container .unit {
+    flex-basis: 10%;
+    background-color: #CCC;
+    padding: 6px 0;
+    text-align: center;
+}
+
+
+/**
+* The individual stores within each item are hidden by default.
+* We also apply margins to them to air them out
+*/
+
+.peapod,
+.freshdirect,
+.amazon {
+    margin: 5px 0;
+    display: none;
+}
+
+
+/**
+* Remove  the  default margin on the H3
+*/
+
+.calculator h3 {
+    margin: 0;
+}
+
+
+/**
+* Create negative space beneath each row
+*/
+
+.calculator .row {
+    margin-bottom: 15px;
+    flex-basis: 30%;
+}
+
+
+/**
+* Hide the totals by default until there's been input
+* Give the totals row a slightly different background and 100% flex-basis 
+*/
+
+.calculator .row.total {
+    display: none;
+    background-color: #ccc;
+    padding: 10px;
+    flex-basis: 100%;
+}
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    /**
+    * Adding the flexbox styles to calculator in the tablet media query allows mobile to stack
+    * and for the flexbox to take over by default on larger devices
+    */
+    .calculator {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 769px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+}
+
+
+/*********************************************************************
+  YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 805px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container {
+        padding: 0;
+    }
+}
+
+
+/*********************************************************************
+  YOUR LARGE DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 1205px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container.image .caption,
+    .container.image figcaption {
+        padding: 5px 0;
+    }
+}
