@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", function() { //DOM Ready
          * To keep things DRY, we created a function called item_input_listener that fires for each event
          * This allows the same code to be used for multiple events
          */
-        row.querySelector("[name='qty']").addEventListener("change", item_input_listener);
-        row.querySelector("[name='qty']").addEventListener("keyup", item_input_listener);
+        const qty_field = row.querySelector("[name='qty']");
+        qty_field.addEventListener("change", item_input_listener);
+        qty_field.addEventListener("keyup", item_input_listener);
     });
 });
 
