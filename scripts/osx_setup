@@ -6,15 +6,11 @@ clear
 echo "Level the playing field for firefox and chrome"
 brew install --force --cask firefox google-chrome
 
-echo "Install sublime-text, atom, slack"
-brew install --cask --force sublime-text atom slack
+echo "Install sublime-text, atom, slack, vscode"
+brew install --cask --force sublime-text atom slack visual-studio-code
 clear
 
 brew doctor
-
-echo "Setup atom extensions"
-apm install atom-beautify pigments less-than-slash seti-ui open-in-browsers
-curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/configs/atom.cson > ~/.atom/config.cson
 
 echo "Installing Oh My ZSH"
 curl -L http://install.ohmyz.sh | sh
