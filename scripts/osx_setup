@@ -13,7 +13,7 @@ clear
 echo "Level the playing field for firefox and chrome"
 brew install --force --cask firefox google-chrome
 
-echo "Install sublime-text, atom, slack, vscode"
+echo "Install sublime-text, atom, slack, vscode and zoom"
 brew install --cask --force sublime-text atom slack visual-studio-code zoom
 clear
 
