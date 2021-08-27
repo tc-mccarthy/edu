@@ -1,6 +1,13 @@
 #!/bin/bash
 echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+## M1 chip-specific logic
+if [[ "$(uname -m)" == "arm64" ]]; then
+  echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
+  export PATH="/opt/homebrew/bin:${PATH}"
+fi
+
 clear
 
 echo "Level the playing field for firefox and chrome"

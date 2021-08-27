@@ -28,8 +28,9 @@ document.addEventListener("DOMContentLoaded", function() { //DOM Ready
  * @returns 
  */
 function item_input_listener(e) {
-    const row = e.target.closest(".row"); // trace back the parent row from the qty field that is the source of the event
-    let qty = row.querySelector("[name='qty']").value; // capture the value
+    const this_input = e.target;
+    const row = this_input.closest(".row"); // trace back the parent row from the qty field that is the source of the event
+    let qty = this_input.value; // capture the value
 
     if (qty === "") { // if the qty is blank, short circuit the function so there are no errors
         return false;
