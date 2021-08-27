@@ -1,24 +1,27 @@
 #!/bin/bash
 echo "Installing Homebrew"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+## M1 chip-specific logic
+if [[ "$(uname -m)" == "arm64" ]]; then
+  echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
+  export PATH="/opt/homebrew/bin:${PATH}"
+fi
+
 clear
 
-echo "Installing nodejs, python, ruby, cask, php-cs-fixer"
-brew install --force nodejs python3 ruby cask php-cs-fixer
+echo "Installing nodejs and python3"
+brew install --force nodejs python3
+pip3 install --upgrade sqlparse virtualenv jupyter
 
 echo "Level the playing field for firefox and chrome"
-brew cask install --force firefox google-chrome
+brew install --force --cask firefox google-chrome
 
-echo "Install sublime-text, atom, slack"
-brew cask install --force sublime-text atom slack visual-studio-code
+echo "Install sublime-text, atom, slack, vscode and zoom"
+brew install --cask --force sublime-text atom slack visual-studio-code zoom
 clear
 
 brew doctor
-
-echo "Setup atom extensions"
-apm install atom-beautify pigments less-than-slash seti-ui open-in-browsers
-curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/configs/atom.cson > ~/.atom/config.cson
-pip3 install --upgrade sqlparse virtualenv jupyter
 
 echo "Installing Oh My ZSH"
 curl -L http://install.ohmyz.sh | sh
