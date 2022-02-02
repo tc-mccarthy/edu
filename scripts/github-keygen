@@ -18,3 +18,5 @@ echo "Host github.com
 chmod 600 $CONFIG_FILE
 
 cat ~/.ssh/$KEY_NAME.pub
+
+echo "\n\n Copy the above string in to https://github.com/settings/ssh/new, title it and hit add SSH key. You're done!"
