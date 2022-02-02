@@ -24,6 +24,10 @@ In order to make your coding experience smoother, I have provided the following 
 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/osx_setup)"`
 
+### GitHub SSH Key Generator one-liner
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/github-keygen)"`
+
 ### Windows Configuration one-liner
 
 All commands, including the one-liner, should be run in the PowerShell. PowerShell ISE and Command prompt do not work properly with this script.
