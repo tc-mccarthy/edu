@@ -10,6 +10,6 @@ _Note: A video tutorial is available at https://youtu.be/NyYhh9AUE28_
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tc-mccarthy/edu/master/scripts/github-keygen)"
 ```
 
-2. When the script completes it will output the the public half of the key path. Copy the string and go to https://github.com/settings/ssh/new. Paste the string into the "Key" field. The title should be something indicating the computer on which the key was generated. (Personal Laptop 2022). Hit `add SSH key`
+2. When the script completes it will output the the public half of the key. Copy the string and go to https://github.com/settings/ssh/new. Paste the string into the "Key" field. The title should be something indicating the computer on which the key was generated. (Personal Laptop 2022). Hit `add SSH key`
 
 3. Going forward, you should clone your repos using the `SSH` method (not the `HTTPS` method). This cloning method will use your SSH keys to set up a local copy of the repo and any git operations you perform on your computer within that repo going forward will also use your keys.
