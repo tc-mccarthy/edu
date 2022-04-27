@@ -27,7 +27,7 @@
     "eslint-plugin-proposal": "^2.3.0",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-standard": "^4.0.1",
-    "grunt": "^1.0.4",
+    "grunt": "^1.5.2",
     "grunt-babel": "^8.0.0",
     "grunt-browserify": "^5.3.0",
     "grunt-changed": "^3.0.0",
